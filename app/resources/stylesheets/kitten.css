@@ -1,0 +1,79 @@
+#kitten-image {
+	display: block;
+	margin-top: 75px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	padding: 0px;
+	text-align: center;
+	border: none;
+}
+#kitten-image-high {
+	display: block;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	padding: 0px;
+	text-align: center;
+	border: none;
+}
+#kitten-image-anybody {
+	display: block;
+	margin-top: 110px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	padding: 0px;
+	text-align: center;
+	border: none;
+}
+#suspended-message {
+	display: block;
+	margin-top: 155px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	padding: 0px;
+	text-align: center;
+	text-decoration: none;
+	border: none;
+	color: #222;
+}
+#kitten-message {
+	display: block;
+	margin-top: 25px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	padding: 0px;
+	text-align: center;
+	text-decoration: none;
+	border: none;
+	color: #222;
+}
+.suspended-headline {
+	font-size: 24px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.kitten-headline {
+	font-size: 20px;
+	font-weight: bold;
+	text-decoration: none;
+}
+.kitten-subline {
+	font-size: 16px;
+	font-weight: normal;
+	text-decoration: none;
+}
+#kitten-return {
+	display: block;
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0px;
+	padding: 0px;
+	text-align: center;
+	border: none;
+}

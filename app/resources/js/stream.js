@@ -1,0 +1,5 @@
+﻿/*
+ * -> Conexión Persistente al servidor
+*/
+var Stream={stream:true,last_quests:0,last_answers:0,last_likes:0,url:null,noerror:true,connect:function(){var e=this;$.get(e.url,{stream:e.stream,last_quests:e.last_quests,last_answers:e.last_answers},function(t){if(typeof t.is_member!="undefined"&&t.is_member==true&&typeof t.questions!="undefined"&&t.answers!="undefined"){e.last_quests=t.questions;e.last_answers=t.answers;if(parseInt(t.questions)==0){$("#notification-q-digit").hide()}else{$("#notification-q-digit").text(t.questions).show()}if(parseInt(t.answers)==0){$("#notification-answer-digit").hide()}else{if(typeof cache["modal"]!="undefined"){cache["modal"]=""}$("#notification-answer-digit").text(t.answers).show()}update_title();e.noerror=true}else{window.location.reload();e.stream=false}},"json").always(function(){if(!e.noerror&&e.stream){setTimeout(function(){e.connect()},2e3)}else{if(e.stream)e.connect()}e.noerror=false})}}
+$(document).ready(function(){Stream.url="/ajax/stream";Stream.connect()})

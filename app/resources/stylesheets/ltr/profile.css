@@ -1,0 +1,582 @@
+.leaderboardOuter {
+    position: absolute;
+    top: 0;
+}
+#leaderboard {
+	display: block;
+        position: relative;
+	overflow: hidden;
+	width:728px;
+	height:90px;
+	padding:3px;
+	margin-top:0px;
+	margin-bottom:10px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #FFF;
+	border:none;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+div.bSlot {
+	display:block;
+	width:468px;
+	height:60px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0px;
+	margin-bottom:0px;
+	padding:0px;
+	border:none;
+	text-decoration:none;
+}
+#profile-head {
+	display: block;
+	width: 685px;
+	height: auto;
+	margin: 0px;
+	padding-top: 20px;
+	padding-bottom: 15px;
+	padding-left: 25px;
+	padding-right: 25px;
+	background-color: #F4F4F4;
+	-moz-border-radius: 5px 5px 0 0;
+	border-bottom-left-radius: 0px 0px;
+	border-bottom-right-radius: 0px 0px;
+	border-top-left-radius: 5px 5px;
+	border-top-right-radius: 5px 5px;
+	overflow: hidden;
+	border-bottom-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-bottom-color: #EEE;
+}
+#profile-head-picture {
+	display: block;
+	width: 90px;
+	height: 90px;
+	margin-top: 3px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 0px;
+	border: none;
+	float: left;
+}
+#profile-info {
+        position: relative;
+	display: block;
+	width: 570px;
+	min-height: 107px;
+	margin: 0px;
+	padding: 0px;
+	float: right;
+}
+#profile-name {
+	display: block;
+	width: 310px;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+}
+a.link-profile-name {
+	font-size: 16px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #000;
+}
+a.link-profile-name:hover {
+	color: #3081A3;
+	text-decoration: underline;
+}
+#profile-name-container {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	line-height:18px;
+	font-size: 16px;
+	font-weight: bold;
+	clear: both;
+        word-wrap: break-word;
+}
+#profile-button {
+	display: block;
+	margin-top: 13px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 0px;
+	float: right;
+	clear: right;
+}
+#profile-bio {
+	display: block;
+        /*width: 460px;*/
+	margin: 0px;
+	padding: 0px;
+	/*float: left;*/
+	clear: left;
+	font-size: 12px;
+	color: #000;
+        word-wrap: break-word;
+}
+.statistics {
+	display: block;
+	width: 260px;
+	margin: 0px;
+	padding: 0px;
+	float: right;
+	text-align: center;
+}
+a.stasis-box {
+	display: block;
+	float: right;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	text-align: center;
+}
+.stasis-digit {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	font-weight: bold;
+	font-size: 16px;
+	text-decoration: none;
+	color:#000;
+}
+.stasis-label {
+	display: block;
+	margin: 0px;
+	padding: 0px;
+	font-size: 11px;
+	color: #3081A3;
+}
+.stasis-box:hover .stasis-digit {
+        color: #3081A3;
+}
+.stasis-box:hover .stasis-label {
+        text-decoration: underline;
+}
+.statistics-seperator {
+	display: block;
+	height: 33px;
+	width: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 7px;
+	margin-right: 7px;
+	padding: 0px;
+	float: right;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-left-color: #DFDFDF;
+}
+#profile-title {
+        position: relative;
+	display: block;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+.profile-title-text {
+	display: block;
+	width: 620px;
+        line-height: 23px;
+	margin: 0px;
+	padding: 0px;
+	float: left;
+        word-wrap: break-word;
+}
+.profile-title-counter {
+        width:auto;
+	height:26px;
+	display:block;
+	float:left;
+	color:#999;
+	margin:0px;
+	padding-left:5px;
+	padding-right:0px;
+	padding-top:0px;
+	padding-bottom:0px;
+	font-weight:normal;
+	font-size:16px;
+	line-height:26px;
+}
+.qotd-spacer {
+        float: left;
+        clear: both;
+        overflow: hidden;
+        width: 100%;
+}
+#video-Box {
+	display: block;
+	border: none;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 0px;
+	width: 360px;
+	height: 260px;
+        background: #EEEEEE;
+	float: left;
+	clear: both;
+}
+#video-Box-wrapper {
+        width: 360px;
+        height: 260px;
+        background: #ddeef6;
+}
+h1.videoHeading {
+    font-size: 16px;
+    font-weight: bold;
+}
+h2.videoHeading {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.profile-input-privacy-radio {
+	display: block;
+	float: left;
+	margin-right: 10px;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
+}
+.questionType_box {
+	display: block;
+	float: right;
+	margin:0px;
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:0px;
+	padding-bottom:0px;
+	font-size:11px;
+	line-height:13px;
+	/*color:#626262;*/
+        color:#000;
+}
+.typeCheckbox_text {
+	display:block;
+	float:right;
+	margin-top:6px;
+	margin-bottom:0px;
+	margin-left:0px;
+	margin-right:0px;
+	padding:0px;
+}
+.typeCheckbox {
+	display:block;
+	float:right;
+	margin-top:7px;
+	margin-bottom:0px;
+	margin-left:0px;
+	margin-right:5px;
+	padding:0;
+        width:14px;
+        height:14px;
+}
+#submit-container {
+	display: block;
+	width: 100%;
+	margin-top: 7px;
+	margin-bottom: 5px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 0px;
+	overflow: hidden;
+}
+#submit-container-float {
+	display: block;
+	width: 100%;
+	margin-top: 7px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 0px;
+	overflow: hidden;
+	float: left;
+}
+.services-shareBox {
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	margin-top: 7px;
+	margin-bottom: 7px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 0px;
+	font-weight: normal;
+	float: left;
+}
+.motivationBlock-service {
+	display: block;
+	float: left;
+	margin-right: 10px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding: 0px;
+	overflow: hidden;
+	font-weight: bold;
+	font-size: 12px;
+}
+.motivationBlock-share {
+	display: block;
+	float: left;
+	margin-right: 10px;
+	margin-left: 0px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding: 0px;
+	overflow: hidden;
+	font-weight: normal;
+	font-size: 12px;
+}
+.headLine-motivator {
+	display: block;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.noQuestionBox {
+	display: block;
+	width: 100%;
+	margin: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 0px;
+	padding-right: 0px;
+	font-size: 14px;
+	color: #000;
+	overflow: hidden;
+}
+.socialIcon-holder {
+	display: block;
+	width: 100%;
+	height: 32px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+	overflow: hidden;
+}
+.socialIcon {
+	border: none;
+	display: block;
+	width: 32px;
+	height: 32px;
+	float: left;
+	margin-right: 10px;
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding: 0px;
+}
+#questionMotivator-block {
+	display:block;
+	width: 685px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding: 0px;
+	overflow: hidden;
+	position: absolute;
+	top: 55px;
+}
+.like-face {
+	display: block;
+	width: 28px;
+	height: 28px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 5px;
+	padding: 0px;
+	border: none;
+	float: right;
+}
+.like-face-container {
+	display: block;
+	/*float: right;*/
+        clear: both;
+	height: 28px;
+	/*width: 657px;*/
+	margin-top: 0px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-right: 18px;
+	padding-left: 0px;
+        padding-top: 5px;
+	overflow: hidden;
+}
+
+/* reMotivation
+ ***************************/
+
+.reMotivation_box-complex {
+	display:block;
+	width:636px;
+	min-height:105px;
+	margin-top:4px;
+	margin-bottom:4px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0px;
+	text-align:center;
+}
+.reMotivation_box-simple {
+	display:block;
+	width:636px;
+	min-height:90px;
+	margin-top:4px;
+	margin-bottom:4px;
+	margin-left:auto;
+	margin-right:auto;
+	padding-top:15px;
+	padding-bottom:0px;
+	padding-right:0px;
+	padding-left:0px;
+	text-align:center;
+}
+#reMotivation_box h1 {
+    	display:block;
+	width:100%;
+	margin-top:0px;
+	margin-bottom:13px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0px;
+	font-size:14px;
+	line-height:18px;
+	font-weight:bold;
+}
+#reMotivation_box h2 {
+	display:block;
+	width:100%;
+	margin-top:14px;
+	margin-bottom:0px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0px;
+	font-size:11px;
+	line-height:12px;
+	font-weight:normal;
+	color:#777;
+}
+#choiceContainer {
+	display:block;
+	overflow:hidden;
+	width:100%;
+	height:30px;
+	margin-top:0px;
+	margin-bottom:0px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:0px;
+	text-align:center;
+}
+a.choiceRegister {
+	display:block;
+	float:left;
+	clear:left;
+	height:30px;
+	width:298px;
+	margin:0px;
+	padding-top:8px;
+	padding-bottom:8px;
+	padding-left:10px;
+	padding-right:10px;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:11px;
+	line-height:14px;	
+	/*background-image:url(/images/buttons/reMotivator-register.png);
+        background-repeat:no-repeat;*/
+        background-position:0px -192px;
+	color:#FFF;
+	text-shadow: 0px -1px 0px #356992;
+}
+a.choiceRegister:hover {
+	background-position:0px -224px;
+}
+a.choiceRegister:active {
+	background-position:0px -256px;
+}
+a.choiceAsk {
+	display:block;
+	float:right;
+	clear:right;
+	height:30px;
+	width:298px;
+	margin:0px;
+	padding-top:8px;
+	padding-bottom:8px;
+	padding-left:10px;
+	padding-right:10px;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:11px;
+	line-height:14px;
+        /*background-image:url(/images/buttons/reMotivator-ask.png);
+	background-repeat:no-repeat;*/
+	background-position:0px 0px;
+	color:#4D4D4D;
+	text-shadow: 0px -1px 0px #FFF;
+}
+a.choiceAsk:hover {
+	background-position:0px -32px;
+	color:#333;
+}
+a.choiceAsk:active {
+	background-position:0px -64px;
+	color:#333;
+}
+a.choiceAsk-logged {
+	display:block;
+	height:30px;
+	width:280px;
+	margin:auto;
+	padding-top:8px;
+	padding-bottom:8px;
+	padding-left:10px;
+	padding-right:10px;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:11px;
+	line-height:14px;
+        /*background-image:url(/images/buttons/reMotivator-ask_logged.png);
+	background-repeat:no-repeat;*/
+	background-position:-9px -96px;
+	color:#4D4D4D;
+	text-shadow: 0px -1px 0px #FFF;
+}
+a.choiceAsk-logged:hover {
+	background-position:-9px -128px;
+	color:#333;
+}
+a.choiceAsk-logged:active {
+	background-position:-9px -160px;
+	color:#333;
+}
