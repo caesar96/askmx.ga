@@ -1,20 +1,6 @@
-﻿ErrorDocument 401 /index.php?do=404
-ErrorDocument 403 /index.php?do=404
-ErrorDocument 404 /index.php?do=404
-  
-RewriteEngine On
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{REQUEST_FILENAME} !-f
- 
-Options +FollowSymLinks
 
- 
-## Evitar que se liste el contenido de los directorios
-Options All -Indexes
-## Lo mismo que lo anterior
-IndexIgnore *
-# Protegerse contra los ataques DOS limitando el tamaño de subida de archivos
-LimitRequestBody 10240000
+RewriteEngine On
+
 
 #  -----------  REESCRIBIMOS NUEVOS DIRECTORIOS ----------- #
 # --- INDEX --- #
