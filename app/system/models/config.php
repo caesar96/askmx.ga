@@ -6,8 +6,11 @@
 */
 // Evitamos el acceso directo al archivo
 if(!defined('HEADER')) header('Location: /');
-
-$heroku_db = parse_url(getenv('CLEARDB_DATABASE_URL'));
+$heroku_db = array();
+$heroku_db['host'] = empty(getenv('CLEARDB_DATABASE_URL')) ? null : 'us-cdbr-iron-east-02.cleardb.net';
+$heroku_db['user'] = empty(getenv('CLEARDB_DATABASE_URL')) ? null : 'b24319fc3c1915';
+$heroku_db['pass'] = empty(getenv('CLEARDB_DATABASE_URL')) ? null : '517775e7';
+$heroku_db['name'] = empty(getenv('CLEARDB_DATABASE_URL')) ? null : 'heroku_edd8f89c43cb5d5';
 
 /** Confurar datos de conexón **/
 $db = array();
@@ -18,7 +21,7 @@ $db['user'] = empty ($heroku_db['user']) ? 'root' : $heroku_db['user'];
 /* Tu contraseña de MySQL */
 $db['pass'] = empty ($heroku_db['pass']) ? '' : $heroku_db['pass'];
 /* El nombre de tu base de datos */
-$db['name'] = empty (ltrim($dbopts["path"],'/')) ? 'askme' : ltrim($dbopts["path"],'/');
+$db['name'] = empty ($heroku_db['name']) ? 'askme' : $heroku_db['name'];
 //Conexión persistente
 $db['persist'] = true;
 
