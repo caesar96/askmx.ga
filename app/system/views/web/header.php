@@ -31,7 +31,7 @@
 	<script type="text/javascript">var pageUrl = "<?php echo $settings['url'];?>";var u = {is_member: <?php echo $user->is_member ? 'true' : 'false';?>}</script>
 <?php if($settings['offline']['status'] !== 1):?>
 	<script type="text/javascript" src="<?php echo $settings['source_url'];?>/js/mn.act.js"></script>
-<?php if($user->is_member):?>
+<?php if($user->is_member && empty(getenv('CLEARDB_DATABASE_URL'))):?>
 	<script type="text/javascript" src="<?php echo $settings['source_url'];?>/js/stream.js"></script>
 <?php endif;?>
 <?php endif;?>
