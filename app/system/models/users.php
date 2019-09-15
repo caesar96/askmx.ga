@@ -250,7 +250,7 @@ class USERS
 		$query['u_background'] = $this->getBackground($this->nick);
 		/* MANEJAMOS DATOS DEL AVATAR */
 		$u_avatar = $this->getAvatar($query['u_nick']);
-		$query['p_avatar'] = (empty( $query['p_avatar']) || empty($u_avatar) ) ? array('t' => 'http://i.imgur.com/HSmdSGH.jpg', 'a' => 'http://i.imgur.com/HSmdSGH.jpg') : $u_avatar;
+		$query['p_avatar'] = (empty( $query['p_avatar']) || empty($u_avatar) ) ? array('t' => 'https://i.imgur.com/HSmdSGH.jpg', 'a' => 'https://i.imgur.com/HSmdSGH.jpg') : $u_avatar;
 		//VACIAMOS LA VARIABLE PARA LIBERAR MEMORIA
 		unset($u_avatar, $_GET['u_name']);
 		//TOTAL DE RESPUESTAS
@@ -799,7 +799,7 @@ class USERS
 					/* MANEJAMOS DATOS DEL AVATAR */
 					$u_avatar = $this->getAvatar($data['nick']);
 					//AVATAR DEL USUARIO
-					$data['avatar'] = ( empty($u_avatar) ) ? 'http://i.imgur.com/HSmdSGH.jpg' : $u_avatar['t'];
+					$data['avatar'] = ( empty($u_avatar) ) ? 'https://i.imgur.com/HSmdSGH.jpg' : $u_avatar['t'];
 					//NOMBRE DEL USUARIO
 					$data['name'] = $this->getNameProfile($data['n_fromid']);
 					//FECHA DE LA RESPUESTA
