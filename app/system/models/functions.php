@@ -29,18 +29,17 @@ function user_geo($ip){
  * @ return (float)
 */
 function getIP(){
-	if(getenv("HTTP_CLIENT_IP")&&strcasecmp(getenv("HTTP_CLIENT_IP"),"0.0.0.0")){
-		$ip = getenv("HTTP_CLIENT_IP");
-	} elseif(getenv("HTTP_X_FORWARDED_FOR") && strcasecmp(getenv("HTTP_X_FORWARDED_FOR"),"0.0.0.0")){
-		$ip = getenv("HTTP_X_FORWARDED_FOR");
-	} elseif(getenv("REMOTE_ADDR")&&strcasecmp(getenv("REMOTE_ADDR"), "0.0.0.0")){
-		$ip = getenv("REMOTE_ADDR");
-	} elseif(isset($_SERVER['REMOTE_ADDR'])&&$_SERVER['REMOTE_ADDR']&&strcasecmp($_SERVER['REMOTE_ADDR'],"0.0.0.0")){
-		$ip = $_SERVER['REMOTE_ADDR'];
-	} else {
-		exit('Autorizaci6oacute;n no válida. Acceso denegado.');
-	}
-	return $ip;
+    if( array_key_exists('HTTP_X_FORWARDED_FOR', $_SERVER) && !empty($_SERVER['HTTP_X_FORWARDED_FOR']) ) {
+        if (strpos($_SERVER['HTTP_X_FORWARDED_FOR'], ',')>0) {
+            $addr = explode(",",$_SERVER['HTTP_X_FORWARDED_FOR']);
+            return trim($addr[0]);
+        } else {
+            return $_SERVER['HTTP_X_FORWARDED_FOR'];
+        }
+    }
+    else {
+        return $_SERVER['REMOTE_ADDR'];
+    }
 }
 /**
  * @ Filtra las variables usadas en alguna consulta SQL
