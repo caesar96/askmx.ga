@@ -57,7 +57,7 @@ class Session
         if(empty($session['s_id']))
         {
             $this->destroy();
-            return FALSE;
+            return false;
         }
 
         // Is the session current?
